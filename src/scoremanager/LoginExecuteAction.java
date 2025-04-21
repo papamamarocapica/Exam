@@ -161,7 +161,7 @@ public class LoginExecuteAction extends Action {
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("errorMessage", "システムエラーが発生しました。");
-            request.getRequestDispatcher("../../error.jsp").forward(request, response);
+            request.getRequestDispatcher("../../error_login.jsp").forward(request, response);
         }
     }
 }
